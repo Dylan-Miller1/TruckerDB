@@ -1,0 +1,41 @@
+TruckID,TruckTypeID,Model,TruckYear,WeightRating
+1,4,Peterbilt,2008,30000
+2,1,Kenworth,2015,80000
+3,6,International,2001,50000
+4,3,Western Star,2010,50000
+5,7,Mack,2018,80000
+6,2,Peterbilt,1999,30000
+7,5,Kenworth,2005,50000
+8,3,International,2019,80000
+9,1,Western Star,2014,30000
+10,7,Mack,2007,80000
+11,6,Peterbilt,2012,50000
+12,4,Kenworth,1997,30000
+13,2,International,2003,50000
+14,5,Western Star,2016,30000
+15,1,Mack,1995,80000
+16,3,Peterbilt,2009,50000
+17,6,Kenworth,2011,30000
+18,2,International,2017,80000
+19,7,Western Star,2004,50000
+20,4,Mack,2006,30000
+21,5,Peterbilt,1996,80000
+22,1,Kenworth,2002,30000
+23,3,International,2013,50000
+24,7,Western Star,2020,80000
+25,6,Mack,2014,50000
+26,2,Peterbilt,2005,30000
+27,4,Kenworth,2018,80000
+28,1,International,2000,30000
+29,5,Western Star,2003,50000
+30,7,Mack,1999,80000
+31,3,Peterbilt,2016,30000
+32,6,Kenworth,2010,50000
+33,2,International,1998,80000
+34,5,Western Star,2012,50000
+35,1,Mack,2008,80000
+36,4,Peterbilt,2004,30000
+37,7,Kenworth,2017,50000
+38,3,International,2006,50000
+39,6,Western Star,1995,80000
+40,2,Mack,2013,30000

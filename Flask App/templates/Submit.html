@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block titlecontent%}Submit To Database{% endblock %}
+
+{% block table %}
+    <form action="{{ url_for('submit') }}" method="POST">
+        <label for="first_name" class="form-label">First Name:</label>
+        <br>
+        <input type="text" id="first_name" name="first_name" required>
+        <br><br>
+
+        <label for="last_name" class="form-label">Last Name:</label>
+        <br>
+        <input type="text" id="last_name" name="last_name" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <br>
+        <input type="text" id="dob" name="dob" placeholder="YYYY-MM-DD" required>
+        <br><br>
+
+        <label for="license_number">Driver's License Number:</label>
+        <br>
+        <input type="text" id="license_number" name="license_number" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="text" id="email" name="email" required>
+        <br><br>
+
+        <label for="district">District:</label>
+        <br>
+        <select id="district" name="district" required>
+            <option value="1">Greenwood</option>
+            <option value="2">Silverlake</option>
+            <option value="3">Sunset Valley</option>
+            <option value="4">Maplewood</option>
+            <option value="5">Oakridge</option>
+        </select>
+        <br><br>
+
+        <label for="truck_model">Truck Model:</label>
+        <br>
+        <input type="text" id="truck_model" name="truck_model" required>
+        <br><br>
+
+        <label for="truck_year">Truck Year:</label>
+        <br>
+        <input type="text" id="truck_year" name="truck_year" required>
+        <br><br>
+
+        <label for="weight_rating">Weight Rating:</label>
+        <br>
+        <input type="text" id="weight_rating" name="weight_rating" required>
+        <br><br>
+
+        <label for="truck_class">Truck Class:</label>
+        <br>
+        <select id="truck_class" name="truck_class" required>
+            <option value="1">Dump</option>
+            <option value="2">Transfer</option>
+            <option value="3">End Dump</option>
+            <option value="4">Low Bed</option>
+            <option value="5">Concrete</option>
+            <option value="6">Garbage</option>
+            <option value="7">Container</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

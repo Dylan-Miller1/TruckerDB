@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block titlecontent%}Home Page{% endblock %}
+
+{% block table %}
+    <table id="example" class="table table-striped" style="width:20%">
+        <thread>
+            <tr>  
+                <th>District ID</th>
+                <th>Name</th>
+            </tr>
+        </thread>    
+        <tbody>
+            {% for row in data %}
+            <tr>
+                    {% for cell in row %}
+                    <td>{{ cell }}</td>
+                    {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>  
+    </table>
+{% endblock %}
+

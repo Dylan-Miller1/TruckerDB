@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block titlecontent%}Submit Review{% endblock %}
+
+{% block table %}
+<h3>You Have Submitted The Following Information:</h3>
+First Name: {{ first_name }}<br>
+Last Name: {{ last_name }}<br>
+Date of Birth: {{ dob }}<br>
+Driver's License Number: {{ license_number }}<br>
+Email: {{ email }}<br>
+District: {{ district }}<br>
+Truck Model: {{ truck_model }}<br>
+Truck Year: {{ truck_year }}<br>
+Weight Rating: {{ weight_rating }}<br>
+Truck Class: {{ truck_class }}<br>
+<br>
+<a href="{{ url_for('home') }}">Return Home</a>
+{% endblock %}

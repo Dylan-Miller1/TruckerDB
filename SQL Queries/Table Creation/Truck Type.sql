@@ -1,0 +1,4 @@
+CREATE TABLE TruckType (
+	TruckTypeID INT PRIMARY KEY,
+	TruckClass VARCHAR(50)
+);

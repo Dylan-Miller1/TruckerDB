@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block titlecontent%}Home Page{% endblock %}
+
+{% block table %}
+    <table id="example" class="table table-striped" style="width:90%">
+        <thread>
+            <tr>  
+                <th>Driver ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date Of Birth</th>
+                <th>Drivers License</th>
+                <th>Email</th>
+                <th>Distric</th>
+                <th>Truck Type</th>
+            </tr>
+        </thread>    
+        <tbody>
+            {% for row in data %}
+            <tr>
+                    {% for cell in row %}
+                    <td>{{ cell }}</td>
+                    {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>  
+    </table>
+{% endblock %}
+

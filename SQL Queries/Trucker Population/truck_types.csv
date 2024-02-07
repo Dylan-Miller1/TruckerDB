@@ -1,0 +1,9 @@
+TruckTypeID,TruckClass
+1,Dump
+2,Transfer
+3,End Dump
+4,Low Bed
+5,Concrete
+6,Garbage
+7,Container
+

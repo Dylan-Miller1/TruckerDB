@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--Data Tables CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+
+        <!--Data Tables JS-->
+        <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <script defer src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+        <script defer src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+
+        <!--Data Tables JS-->
+        <script defer src="./static/script.js"></script>
+
+        <!--Nav Bar BootStrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="{{ url_for('home') }}">TruckerDB</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('trucks') }}">Trucks</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('trucktype') }}">Truck Types</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('districts') }}">Districts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('submit') }}">Sign Up</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <!--Left Side Padding-->
+        <style>
+          body {
+              padding-left: 30px;
+              padding-right: 30px; /* Adjust the value according to your preference */
+          }
+        </style>
+
+
+        <title>Trucker DB - {% block titlecontent %}{% endblock %}</title>
+    </head>
+
+    <body>
+        <p>{% block table %}{% endblock %}</p>
+    </body>
+</html>
